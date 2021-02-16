@@ -202,13 +202,19 @@ ChallengeResponseAuthentication no
 
 
 
+# Enable x11.
+# Specifies the first display number available for sshd(8)'s X11 forwarding.
+# This prevents sshd from interfering with real X11 servers. The default is 10.
+X11DisplayOffset 10
+X11Forwarding yes
+X11UseLocalhost yes
+
+
+
 
 AllowTcpForwarding no
-X11Forwarding no
 AllowAgentForwarding yes
 #GatewayPorts no
-#X11DisplayOffset 10
-#X11UseLocalhost yes
 #PrintLastLog yes
 #TCPKeepAlive yes
 #UseLogin no
